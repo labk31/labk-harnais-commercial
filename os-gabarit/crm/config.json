@@ -1,0 +1,177 @@
+{
+  "_lisez_moi": "Ce fichier vit dans le dossier os de l'entreprise, sous crm/config.json. Remplissez-le avec les noms techniques réels du CRM du client (objets, étapes, champs), relevés dans son CRM par son connecteur, jamais recopiés d'un autre client. Écrivez le nom technique d'un champ, jamais son libellé affiché : chez Pipedrive, c'est la longue clé du champ personnalisé. Le harnais le lit tel quel : aucun libellé d'étape, aucun nom de champ et aucun seuil n'est écrit en dur dans les skills ou dans le code. Laissez à null ce que le CRM du client n'a pas. Celui qui vend seul remplit ce fichier avec son harnais, à l'installation, et écrit le nom de sa propre entreprise dans instance. Sans CRM, le suivi se tient dans le registre ../registre/ décrit dans 11-crm.md : l'installation écrit null dans serveur_mcp, et les autres clés ne changent pas, parce que le harnais lit alors les colonnes du registre et les étapes en mots simples de 03-parcours-client.md. Les seuils, délais et silences s'appliquent au registre comme au CRM ; un délai par étape se nomme alors par le nom de l'étape en mots simples.",
+  "instance": "NOM_DU_CLIENT",
+  "langue": "fr",
+  "fuseau": "Europe/Paris",
+  "crm": {
+    "_note": "Relevez les valeurs réelles dans le CRM du client avant de remplir. Ne recopiez pas les valeurs LABK.",
+    "serveur_mcp": "NOM_DU_SERVEUR_MCP",
+    "_note_suspect": "objet_suspect et etapes_suspect désignent les suspects du parcours client (03-parcours-client.md). Les autres clés qui contiennent prospect (etape_prospect_gagne, champ_motif_perdu_prospect...) désignent aussi les suspects : leur nom est historique, leur sens est celui du parcours client. Les affaires vivent dans objet_opportunite. Quand suspects et affaires sont le même objet du CRM (Pipedrive, par exemple, où les deux sont des affaires), pipeline_suspect et pipeline_opportunite donnent le nom technique de leurs deux pipelines, et le harnais les distingue par là.",
+    "objet_suspect": "leads",
+    "pipeline_suspect": null,
+    "pipeline_opportunite": null,
+    "objet_opportunite": "opportunities",
+    "etapes_suspect": [
+      "A_CONTACTER",
+      "CONTACTE",
+      "CONVERTI",
+      "PERDU"
+    ],
+    "etapes_opportunite": [
+      "DECOUVERTE",
+      "PROPOSITION",
+      "NEGOCIATION",
+      "GAGNE",
+      "PERDU"
+    ],
+    "etape_bascule_qualification": "DECOUVERTE",
+    "etape_apres_qualification": "PROPOSITION",
+    "champs_qualification": [
+      "situation",
+      "douleur",
+      "impact",
+      "evenement_critique",
+      "decision"
+    ],
+    "champ_qualite": null,
+    "champ_date_qualification": null,
+    "champ_score_global": null,
+    "champ_fit_prospect": null,
+    "champ_dernier_envoi": null,
+    "champ_motif_perdu": null,
+    "valeur_fit_retenue": null,
+    "echelle_scores": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "objet_interlocuteur": null,
+    "objet_routine": null,
+    "objet_entreprise": null,
+    "etapes_maturation": {
+      "new_deal": null,
+      "qualif_15": null,
+      "probleme_reconnu": null,
+      "enjeu_etabli": null,
+      "projet_porte": null,
+      "projet_defendable": null
+    },
+    "etape_sortie_maturation": null,
+    "etapes_signature": [],
+    "libelle_etape_signature": null,
+    "etape_perdu": null,
+    "ordre_lettres": [],
+    "champ_declencheur": null,
+    "champ_date_declencheur": null,
+    "champ_date_reactivation": null,
+    "champ_campagne": null,
+    "champ_statut_interlocuteur": null,
+    "valeur_statut_silence": null,
+    "valeur_statut_actif": null,
+    "valeur_statut_a_atteindre": null,
+    "champ_role_interlocuteur": null,
+    "valeur_role_champion": null,
+    "champ_en_veille": null,
+    "champ_en_veille_depuis": null,
+    "champ_pages_a_surveiller": null,
+    "champ_segment_icp": null,
+    "routine": {
+      "champ_rythme": null,
+      "champ_statut": null,
+      "valeur_statut_active": null,
+      "champ_dernier_passage": null
+    },
+    "vues": {
+      "globale": null,
+      "maturation": null,
+      "maturation_par_declencheur": null,
+      "signature": null
+    },
+    "champ_motif_perdu_prospect": null,
+    "champ_date_reactivation_prospect": null,
+    "etape_prospect_gagne": null,
+    "etape_prospect_perdu": null,
+    "champ_date_gagne_prospect": null,
+    "valeur_motif_silence_prospect": null,
+    "valeur_motif_jamais_contacte_prospect": null,
+    "champ_origine_prospect": null,
+    "champ_origine_opportunite": null,
+    "champ_proprietaire": null,
+    "champ_date_entree_etape": null,
+    "champ_prochain_rdv": null,
+    "_note_sans_workflow": "Aucun workflow ne tourne dans le CRM : le harnais fait passer un suspect gagné en affaire, sort les suspects dont le délai est passé et date les changements d'étape, sur le go du commercial. Ces clés lui disent où écrire. L'architecte CRM les remplit à la fin de la pose, avec les vrais noms du CRM.",
+    "_note_lettres": "Les cinq champs de qualification suivent les lettres du SPICED, dans l'ordre : S la situation, P la douleur, I l'impact, CE l'événement critique (ce qui oblige le client à décider avant une date), D la décision. Remplacez chaque valeur par le nom réel du champ dans le CRM du client.",
+    "_note_maturation": "Les clés de Maturation, de silence, de veille et de routine ne servent que si l'entreprise les a retenues. Laissez à null ce que le CRM du client n'a pas : la skill saute ce qu'elle ne trouve pas."
+  },
+  "delais": {
+    "_unite": "jours calendaires sauf mention contraire ; valeurs de départ à ajuster sur les durées observées chez le client",
+    "new_deal_jours_ouvres": 1,
+    "qualif_15_jours_ouvres": 10,
+    "probleme_reconnu": 30,
+    "enjeu_etabli": 30,
+    "projet_porte": 30,
+    "projet_defendable": 60,
+    "marge_avant_evenement_critique_jours": 30
+  },
+  "silence": {
+    "jours_avant_statut": 15,
+    "paliers": [
+      15,
+      30,
+      45,
+      60
+    ],
+    "jours_avant_veille": 60,
+    "jours_minimum_entre_deux_messages_meme_personne": 21,
+    "_note": "Protocole du silence : statut En silence au premier palier, veille au dernier, délai minimum entre deux messages à la même personne. Si le parcours client fixe un délai différent selon l'étape (par exemple 7 jours après une visite, 10 jours après un devis), écrivez-le dans jours_avant_statut_par_etape, sous la forme \"NOM_DE_L_ETAPE\": nombre de jours ; le harnais le prend avant le délai général.",
+    "jours_avant_statut_par_etape": {},
+    "jours_avant_statut_par_segment": {}
+  },
+  "veille": {
+    "intervalle_jours": 75,
+    "_note": null
+  },
+  "seuils": {
+    "_note": "Ces valeurs sont des hypothèses de départ, pas des vérités : elles dépendent de l'activité de l'entreprise et de ses clients (une collectivité ou une administration n'avance pas au rythme d'une PME). L'entreprise les règle à l'installation, et peut fixer un délai par segment ICP dans les clés *_par_segment, sous la forme \"CODE_DU_SEGMENT\": nombre de jours ; le harnais prend la valeur du segment avant la valeur générale. La boucle d'apprentissage les remet en cause à partir des traces réelles, elle ne les invente pas.",
+    "dossiers_par_matin": 5,
+    "jours_rdv_a_controler": 7,
+    "jours_sans_echange_avant_revue_donnees": 1095,
+    "relance_apres_jours": 3,
+    "stagnation_prospect_jours": 10,
+    "stagnation_opportunite_jours": 14,
+    "qualification_perimee_jours": 21,
+    "qualification_perimee_jours_par_segment": {},
+    "score_minimum_pour_avancer": "2",
+    "occurrences_minimum_pour_motif": 5,
+    "jours_avant_cloture_consigne": 10,
+    "passages_avant_dossier_bloque": 3,
+    "taux_acceptation_minimum": 0.6,
+    "lettres_a_verifier_avant_avancement": [
+      "evenement_critique",
+      "decision"
+    ],
+    "lettres_a_verifier_avant_sortie_maturation": []
+  },
+  "objectif_trois_mois": {
+    "_note": "Ce bloc n'est plus lu. Les objectifs vivent dans 09-objectifs.md, et seulement là ; dans l'édition solo, ce fichier n'existe pas et aucun objectif n'est comparé. Il reste ici pour qu'une ancienne configuration ne casse rien ; laissez defini à false.",
+    "defini": false,
+    "conversions_visees": null,
+    "opportunites_gagnees_visees": null,
+    "date_horizon": null
+  },
+  "vocabulaire": {
+    "prospect": "prospect",
+    "qualification": "SPICED",
+    "score_global": "score",
+    "affaire": "affaire",
+    "lettres": "S, P, I, CE, D",
+    "_note_interdits": "Les mots interdits vivent dans 06-mots-interdits.md, et seulement là. Dans l'édition solo, ce fichier n'existe que si le commercial a nommé des mots refusés à l'installation ; sans lui, aucune liste n'est relue."
+  },
+  "traces": {
+    "dossier": "raw/traces",
+    "format": "jsonl",
+    "une_ligne_par": "événement de session"
+  },
+  "_note_champs_qualification": "champs_qualification suit l'ordre S, P, I, CE, D. Quand le CRM n'a pas de champ pour une lettre, mettez null à sa place : le harnais lit alors le score dans la note de qualification, sur la ligne qui commence par la lettre (par exemple « CE : 2, phrase du client, date »)."
+}
