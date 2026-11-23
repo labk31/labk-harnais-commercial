@@ -111,6 +111,8 @@ Polissage du kit gratuit avant sa publication (23/11/2026). La source a été re
 
 - La page d'accueil du freelance gagne la section « Avec ou sans CRM », demandée par Laurent le 23/11/2026 : avec un CRM qui communique par MCP ou se connecte par API, le harnais travaille dedans ; sans CRM, il tient le suivi dans le registre, deux fichiers qui s'ouvrent dans un tableur.
 
+- Le `.gitignore` du kit gratuit ne vise plus que la racine du kit (`/os/`, `/registre/`, `/harnais/personnel/`, `/nouvelle-version/`) : la ligne `registre/` écartait aussi le gabarit `harnais/gabarits/registre/`, qui manquait au premier envoi public du 23/11/2026.
+
 Ce qui change pour l'existant, pour un harnais déjà installé en v0.6 :
 - La partie personnelle gagne le fichier `constats-a-remonter.md`. Une installation neuve le reçoit avec le gabarit ; dans un harnais déjà installé, le harnais le crée au premier constat qui ne peut pas aller dans l'OS.
 - Dans une équipe, le champ propriétaire doit exister dans le CRM ; sans lui, le harnais ne propose d'écriture que sur les affaires que le commercial lui désigne.

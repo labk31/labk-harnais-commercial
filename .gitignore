@@ -1,6 +1,8 @@
 # Ce que la personne écrit chez elle ne se publie pas et ne s'écrase jamais.
-os/
-registre/
-harnais/personnel/
-nouvelle-version/
+# Les chemins commencent par / pour ne viser que la racine du kit : le gabarit
+# harnais/gabarits/registre/ doit, lui, rester dans le dépôt.
+/os/
+/registre/
+/harnais/personnel/
+/nouvelle-version/
 .DS_Store
