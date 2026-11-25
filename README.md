@@ -12,7 +12,9 @@
 
 ## Ce que c'est
 
-Voici le premier harnais de la série LABK. Un harnais, ici, c'est un assistant de vente qui s'installe dans votre Claude : des règles, une méthode et une mémoire, rangées dans un dossier de votre ordinateur. Il est gratuit.
+Ce kit vous donne gratuitement un harnais pour vendre. Un harnais, ici, c'est un assistant de vente qui s'installe dans votre Claude : des règles, une méthode et une mémoire, rangées dans un dossier de votre ordinateur.
+
+Ce kit est la première brique d'un ensemble plus large. Dans une entreprise, chaque commercial a son harnais, et tous les harnais lisent le même OS : la façon de vendre de l'entreprise, écrite avec le dirigeant. Ce kit vous donne le harnais et un OS simple, que vous remplissez seul avec lui, pour vendre dès maintenant.
 
 Il est pensé pour ceux qui vendent eux-mêmes ce qu'ils font : freelances, consultants, agents commerciaux, dirigeants de petites entreprises. Vous n'avez pas besoin de connaître une méthode de vente pour vous en servir : il vous l'apprend en chemin, un point à la fois.
 
@@ -86,11 +88,13 @@ Il vous faut un abonnement Claude payant et l'application Claude pour Mac ou Win
 
 Seul, comptez quatre à six heures en tout, en séances d'environ une heure `[hyp : estimation à vérifier à la première vraie installation]`. La première séance pose le cadre et vos réglages. La deuxième écrit avec vous ce que vous vendez, à qui, et les étapes de vos ventes ; quand vous ne savez pas répondre, il vous propose un premier jet à corriger. Elle se termine sur votre premier point du matin, limité à vos trois affaires les plus chaudes. La troisième reprend le reste de vos affaires en cours. La quatrième prépare ce qu'il surveillera, puis vous lisez ensemble le point du matin sur tout votre portefeuille. Si vous suivez beaucoup de prospects, une séance de plus s'ajoute. Entre deux séances, vous reprenez en écrivant « on reprend l'installation ». Ensuite, chaque matin, il vous suffit d'écrire « point du matin ».
 
-## Vous avez une équipe commerciale
+## L'édition entreprise
 
-Dès que plusieurs commerciaux vendent ensemble, il faut des règles communes : les remises autorisées, les mots à éviter, les routines, un CRM partagé. C'est l'édition entreprise de LABK. Elle reprend ce kit et y ajoute les modules d'équipe, posés avec le dirigeant.
+L'édition entreprise s'adresse aux entreprises qui ont une équipe commerciale, ou qui veulent en construire une. Chaque commercial y reçoit son harnais, et tous les harnais s'appuient sur l'OS de l'entreprise : ses clients cibles, son parcours de vente, ses règles communes (les remises autorisées, les mots à éviter, les routines) et un CRM partagé.
 
-Pour en parler, contactez Laurent Bouloc sur [LinkedIn](https://www.linkedin.com/in/laurent-bouloc/), ou découvrez LABK sur [labk.fr](https://labk.fr/?utm_source=github&utm_medium=referral&utm_campaign=kit-gratuit&utm_content=edition-entreprise).
+Cet OS ne s'écrit pas sur un simple prompt. Il se construit avec le dirigeant, à partir de ce que l'entreprise sait déjà de ses clients et de ses ventes, puis il se vérifie en ateliers. C'est pour cela que l'édition entreprise n'est pas en libre accès : elle se met en place avec LABK.
+
+Pour la découvrir, contactez Laurent Bouloc sur [LinkedIn](https://www.linkedin.com/in/laurent-bouloc/), ou découvrez LABK sur [labk.fr](https://labk.fr/?utm_source=github&utm_medium=referral&utm_campaign=kit-gratuit&utm_content=edition-entreprise).
 
 ## Licence
 
