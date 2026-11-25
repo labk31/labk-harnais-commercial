@@ -2,6 +2,13 @@
 
 Chaque version de la base porte un numéro et une ligne qui dit ce qui change. Quand une version change la forme de quelque chose (par exemple une case ajoutée au SPICED), la ligne dit aussi ce qui change pour l'existant.
 
+## v0.8 (en cours, 25/11/2026)
+
+- Les refus (décision de Laurent du 25/11/2026, section « Le refus et le go » de l'architecture du harnais) : `CLAUDE.md` interdit, même avec le go du commercial, de recopier l'OS ou les fiches du CRM dans `personnel/` et d'exporter une liste de contacts hors des outils de l'entreprise ; la règle « tu ne supprimes rien » couvre aussi la fusion de fiches. Chez celui qui vend seul, un export se fait sur son go. Rien ne change pour l'existant.
+- Avec le registre, l'adresse LinkedIn d'un interlocuteur quitte `personnel/suivi.md` pour une colonne `linkedin`, ajoutée à la fin de `contacts.csv` (décision de Laurent du 25/11/2026), parce qu'une donnée sur un contact appartient à l'entreprise et que `personnel/` part avec le commercial. `personnel/suivi.md` ne garde que les pages publiques à surveiller et les entreprises en veille. Fichiers touchés : `gabarits/registre/contacts.csv`, `gabarits/registre/LISEZ-MOI.md`, `skills/coach-crm/SKILL.md` (sections 1 et 3), `skills/installation/SKILL.md` (section 4 bis). Pour l'existant : un registre déjà rempli ajoute la colonne `linkedin` à la fin de `contacts.csv` et y reporte les adresses notées dans `personnel/suivi.md`, sur le go du commercial.
+
+- La page du kit gratuit (`fabrication-kit-gratuit/README-kit-gratuit.md`) dit que le harnais reste expérimental, qu'il n'est ni fini ni éprouvé, et que toute personne qui veut se joindre au travail est la bienvenue (décision de Laurent du 25/11/2026, pour accorder la page au site labk.fr). Le badge de statut passe de « prêt à essayer » à « expérimental », et « prêt à l'emploi » est retiré. Rien ne change pour l'existant.
+
 ## v0.7 (23/11/2026)
 
 Correction des 34 problèmes relevés par le test de déploiement d'un agent neuf, le 23/11/2026, et ajout de la tenue des rendez-vous. Les dates des simulations écrites plus bas sont des dates fictives, choisies pour le jeu ; le journal le dit désormais à chaque fois.

@@ -3,7 +3,7 @@
 <img src="harnais/assets/banniere.svg" alt="LABK : le harnais du commercial. Il prépare, le commercial décide. La bonne personne, au bon moment, pour les bonnes raisons." width="100%"/>
 
 ![Édition](https://img.shields.io/badge/%C3%A9dition-kit%20gratuit-000000)
-![Statut](https://img.shields.io/badge/statut-pr%C3%AAt%20%C3%A0%20essayer-FFD34E)
+![Statut](https://img.shields.io/badge/statut-exp%C3%A9rimental-FFD34E)
 ![Langue](https://img.shields.io/badge/langue-fran%C3%A7ais-000000)
 
 </div>
@@ -12,11 +12,13 @@
 
 ## Ce que c'est
 
-Voici le premier harnais de la série LABK. Un harnais, ici, c'est un assistant de vente qui s'installe dans votre Claude : des règles, une méthode et une mémoire, rangées dans un dossier de votre ordinateur. Il est gratuit et prêt à l'emploi.
+Voici le premier harnais de la série LABK. Un harnais, ici, c'est un assistant de vente qui s'installe dans votre Claude : des règles, une méthode et une mémoire, rangées dans un dossier de votre ordinateur. Il est gratuit.
 
 Il est pensé pour ceux qui vendent eux-mêmes ce qu'ils font : freelances, consultants, agents commerciaux, dirigeants de petites entreprises. Vous n'avez pas besoin de connaître une méthode de vente pour vous en servir : il vous l'apprend en chemin, un point à la fois.
 
 Le travail qui reste est le vôtre : lui dire ce que vous vendez, à qui, et où en sont vos prospects. Il vous le demande question par question, à l'installation.
+
+Ce harnais reste expérimental. Ce n'est pas une solution finie ni éprouvée : il a encore besoin d'évoluer, et c'est tout le but. Si vous souhaitez vous joindre à ce travail, vous êtes le bienvenu.
 
 ## Pourquoi un harnais
 

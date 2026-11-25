@@ -179,7 +179,7 @@ Avec une dizaine d'affaires, le tour tient dans la séance. Au-delà, tu commenc
 
 Avant le point du matin de la section 5, tu prépares ce que le harnais lira ensuite, en un seul lot montré au commercial :
 
-- pour chaque entreprise de ses affaires ouvertes et de celles qu'il garde en veille : son site, et les pages de son site qu'il veut que tu surveilles (actualités, recrutements) ; pour chaque interlocuteur, l'adresse de son profil LinkedIn, que le commercial ouvrira lui-même (voir section 14 de la skill `coach-crm`) ; avec le registre, cette adresse, comme les pages à surveiller, s'écrit dans la section « Surveillances en cours » de `personnel/suivi.md`, une ligne par interlocuteur, avec son `id` ;
+- pour chaque entreprise de ses affaires ouvertes et de celles qu'il garde en veille : son site, et les pages de son site qu'il veut que tu surveilles (actualités, recrutements) ; pour chaque interlocuteur, l'adresse de son profil LinkedIn, que le commercial ouvrira lui-même (voir section 14 de la skill `coach-crm`) ; avec le registre, cette adresse s'écrit dans la colonne `linkedin` de `contacts.csv`, et les pages à surveiller dans la section « Surveillances en cours » de `personnel/suivi.md`, une ligne par entreprise ;
 - les fiches des interlocuteurs présents dans les notes mais absents du CRM ou du registre ;
 - le statut de chaque interlocuteur, tiré de la date de son dernier échange connu (mail, note ou tâche faite) : « Actif » s'il a échangé depuis moins que le premier palier du silence, « En silence » au-delà, « À atteindre » s'il n'a jamais répondu. Sans cela, le statut « En silence » reste vide le premier jour, et le point du matin ne voit aucun silence ;
 - les doublons, que tu signales sans rien supprimer ;

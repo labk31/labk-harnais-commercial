@@ -2,6 +2,10 @@
 
 Chaque version du gabarit de l'OS porte un numéro et une ligne qui dit ce qui change. Un changement de gabarit ne touche jamais un OS déjà rempli chez un client : s'il le faut, la ligne dit ce que le client peut reporter dans le sien, à la main.
 
+## v0.6 (en cours, 25/11/2026)
+
+`08-autorisations.md` gagne trois lignes dans « Ce que le harnais ne fait jamais » : il ne fusionne aucune fiche, il ne recopie ni l'OS ni le CRM dans la partie personnelle du harnais, il n'exporte aucune liste de contacts. Un OS déjà rempli peut reporter ces trois lignes à la main.
+
 ## v0.5 (23/11/2026)
 
 Correction des problèmes relevés par le test de déploiement d'un agent neuf, le 23/11/2026, pour la part qui touche l'OS.

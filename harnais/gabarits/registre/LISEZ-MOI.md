@@ -22,6 +22,7 @@ Deux fichiers suffisent. Ils s'ouvrent dans n'importe quel tableur (Excel, Numbe
 - `S`, `P`, `I`, `CE`, `D` : la méthode SPICED, qui dit ce que vous savez vraiment de l'affaire : la situation du client (S), son problème (P), ce que ce problème lui coûte (I), ce qui le pousse à décider avant une date (CE), et qui décide (D). Chaque lettre a un score de 0 (on ne sait rien) à 3 (c'est confirmé) ; la preuve est dans `echanges.csv`.
 - `date_evenement_critique`, `montant_estime_ht`, `date_entree_etape` : ce qui donne le rythme de l'affaire.
 - `motif_perdu`, `date_reactivation` : remplis quand l'affaire s'arrête, pour savoir quand et comment revenir vers la personne. Une perte ne supprime rien : la ligne reste dans le fichier, à l'étape perdue.
+- `linkedin` : l'adresse du profil LinkedIn public de la personne. Elle vit ici, et non dans le dossier personnel du harnais, parce qu'une donnée sur un contact appartient à l'entreprise, et que le dossier personnel part avec le commercial (décision de Laurent du 25/11/2026).
 
 Les dates s'écrivent `AAAA-MM-JJ`.
 
@@ -38,7 +39,7 @@ Les dates s'écrivent `AAAA-MM-JJ`.
 
 ## Ce que le registre ne porte pas
 
-Les adresses LinkedIn des interlocuteurs, les pages publiques à surveiller de chaque entreprise et les entreprises en veille ne sont pas dans ces deux fichiers. Elles s'écrivent dans `personnel/suivi.md`, dans le dossier du harnais, section « Surveillances en cours », une ligne par interlocuteur ou par entreprise, avec son `id` quand il en a un.
+Les pages publiques à surveiller de chaque entreprise et les entreprises en veille ne sont pas dans ces deux fichiers. Elles s'écrivent dans `personnel/suivi.md`, dans le dossier du harnais, section « Surveillances en cours », une ligne par entreprise, avec l'`id` de l'un de ses contacts quand il en a un.
 
 ## Si vous passez à un CRM
 
