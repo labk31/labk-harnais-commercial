@@ -132,6 +132,44 @@
     "intervalle_jours": 75,
     "_note": null
   },
+  "prospection": {
+    "_note": "Ce bloc sert aux skills liste et campagne. Il ne contient que des noms techniques du CRM et les réglages du verdict des clics ; les réglages de la prospection (canaux, plafonds, créneaux, cadence, sources) vivent dans 13-prospection.md. Le score d'adéquation se lit dans crm.champ_fit_prospect, la date du dernier envoi dans crm.champ_dernier_envoi, la campagne d'un suspect dans crm.champ_campagne. Laissez à null ce que le CRM n'a pas : sans objet des campagnes, la campagne se lit dans la fiche du dossier prospection/ ; sans objet des signaux, il n'y a pas de verdict des clics, et le harnais travaille sur les réponses.",
+    "objet_campagne": null,
+    "champ_code_campagne": null,
+    "champ_sequence_active": null,
+    "champ_etape_sequence": null,
+    "champ_adresse_verifiee": null,
+    "valeur_adresse_verifiee": null,
+    "etape_signal_detecte": null,
+    "valeur_motif_pas_le_moment": null,
+    "champ_demande_arret": null,
+    "objet_signal": null,
+    "champs_signal": {
+      "type": null,
+      "date": null,
+      "lien": null,
+      "ip": null,
+      "proprietaire_ip": null,
+      "ville_ip": null,
+      "region_ip": null,
+      "verdict": null,
+      "motif_verdict": null,
+      "suspect": null
+    },
+    "_note_objets_machine": "objets_ecrits_par_une_machine liste les objets du CRM qu'un outil écrit seul (par exemple les signaux écrits par l'outil de suivi des clics, ou des indicateurs). Le harnais les lit et y écrit seulement le verdict d'un signal ; il ne les traite jamais comme des fiches de contact, et il ne les corrige pas.",
+    "objets_ecrits_par_une_machine": [],
+    "verdict_clic": {
+      "_note": "Valeurs de départ de la règle du verdict des clics (methode/lire-un-signal.md). Les listes à null prennent les listes françaises par défaut du script src/verdict_clic.py ; remplissez-les pour un autre pays ou pour compléter.",
+      "delai_machine_secondes": 120,
+      "fenetre_rafale_secondes": 1,
+      "fenetre_adresse_partagee_secondes": 3600,
+      "fenetre_piege_secondes": 60,
+      "suffixe_lien_piege": "-piege",
+      "hebergeurs": null,
+      "fournisseurs_acces": null,
+      "departements_regions": null
+    }
+  },
   "seuils": {
     "_note": "Ces valeurs sont des hypothèses de départ, pas des vérités : elles dépendent de l'activité de l'entreprise et de ses clients (une collectivité ou une administration n'avance pas au rythme d'une PME). L'entreprise les règle à l'installation, et peut fixer un délai par segment ICP dans les clés *_par_segment, sous la forme \"CODE_DU_SEGMENT\": nombre de jours ; le harnais prend la valeur du segment avant la valeur générale. La boucle d'apprentissage les remet en cause à partir des traces réelles, elle ne les invente pas.",
     "dossiers_par_matin": 5,

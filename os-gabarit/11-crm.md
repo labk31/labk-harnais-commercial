@@ -30,6 +30,14 @@ Chez celui qui vend seul, le harnais le copie à l'installation et écrit lui-m�
 
 Avec le registre, le harnais ne lit pas les noms d'étapes ni de champs de `crm/config.json` : il lit les colonnes du registre et les étapes en mots simples de `03-parcours-client.md`. Ce qui suppose un CRM ne s'applique pas, et rien ne bloque : il n'y a ni objet des interlocuteurs (le statut et le rôle se lisent sur la ligne de la personne), ni objet Routine (aucune routine n'est lue), ni champ propriétaire (tout le registre est à vous), ni automatisation. Si vous passez un jour à un CRM, le registre s'y reprend tel quel : chaque colonne correspond à un champ du CRM.
 
+## La prospection dans le CRM
+
+Les suspects d'une campagne vivent dans le CRM, dans l'objet des suspects, comme le reste des faits de l'entreprise. Le harnais y écrit chaque envoi, sur le go de la vague : la campagne du suspect, le pas de séquence reçu et sa date. Les noms techniques de ces champs, de l'objet des campagnes et de l'objet des signaux sont dans `crm/config.json`, bloc `prospection`.
+
+Certains objets sont écrits par un outil et non par une personne : les signaux de l'outil de suivi des clics, ou des indicateurs. Ils sont nommés dans `crm/config.json`, sous `prospection.objets_ecrits_par_une_machine`. Le harnais les lit, il y écrit seulement le verdict d'un signal, et il ne les traite jamais comme des fiches de contact.
+
+Sans CRM, les mêmes informations vivent dans les colonnes de prospection du registre (`campagne`, `etape_sequence`, `date_dernier_envoi`, `statut_email`, `demande_arret`), décrites dans son `LISEZ-MOI.md`.
+
 ## Le socle CRM
 
 Le socle CRM est la structure minimale que LABK pose chez tous ses clients accompagnés, puis adapte à leur OS : les fiches des entreprises, des contacts, des suspects et des affaires ; les interlocuteurs de chaque affaire, avec leur statut et leur rôle dans la décision ; les tâches, les notes et les routines ; les deux pipelines (suspects et affaires) ; et la grille SPICED décrite plus bas. L'architecte CRM le décrit dans un classeur, le fait valider par la personne autorisée, puis le pose dans le CRM ou le compare au CRM existant. Ce classeur fait partie du service de l'architecte CRM et n'est pas dans ce dépôt. Celui qui vend seul n'en a pas besoin : son registre ou un CRM simple suffit.

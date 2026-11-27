@@ -1,6 +1,6 @@
 ---
 name: installation
-description: Installe le harnais chez un commercial (installation neuve), aide à remplir l'OS quand il est encore vide, copie et remplit le registre qui remplace le CRM quand il n'y en a pas, ou reprend un outil existant comme un ancien coach CRM sans rien perdre de ce qu'il a appris (reprise). Se déclenche sur « installe-toi », « reprends mon ancien coach », « on reprend l'installation », ou quand le dossier personnel du harnais n'existe pas encore.
+description: Installe le harnais chez un commercial (installation neuve), aide à remplir l'OS quand il est encore vide, copie et remplit le registre qui remplace le CRM quand il n'y en a pas, ou reprend un outil existant comme un ancien coach CRM sans rien perdre de ce qu'il a appris (reprise). Se déclenche sur « installe-toi », « reprends mon ancien coach », « on reprend l'installation », « on règle la prospection », ou quand le dossier personnel du harnais n'existe pas encore.
 ---
 
 # L'installation et la reprise
@@ -27,6 +27,7 @@ L'installation se fait en séances d'environ une heure, à des jours différents
 | 2. L'OS minimum | Celui qui vend seul, quand son OS est encore vide | L'offre, l'ICP, le parcours client et un premier SPICED de référence, puis un premier point du matin sur ses trois affaires les plus chaudes | 2 bis |
 | 3. L'existant | Tout le monde | La reprise d'un ancien outil s'il y en a un, l'existant du CRM ou, sans CRM, le remplissage du registre, puis le tour du portefeuille | 3, 3 bis ou 3 ter, 4 |
 | 4. Le départ | Tout le monde | La première mission, puis le point du matin sur tout le portefeuille | 4 bis, 5 |
+| 5. La prospection | Celui qui va chercher de nouveaux clients, le jour où il le veut | Les canaux et leurs relais, les adresses d'envoi, le rythme, le go, les sources de listes, l'envoi planifié | 5 bis |
 
 Celui qui vend seul fait donc au moins quatre séances. Une entreprise dont l'OS est déjà rempli n'a pas de séance 2 et en fait trois.
 
@@ -71,7 +72,7 @@ Tu remplis `personnel/profil.md` avec lui, dans cet ordre :
 1. **Qui il est** : son nom, son rôle, ses types de clients et ses segments. Dans une équipe, tu lui demandes aussi son nom de propriétaire dans le CRM ; chez celui qui vend seul, tu écris « sans objet ».
 2. **Ses outils** : son espace de travail (Google, Microsoft, autre), sa messagerie, son agenda, son outil de visio, et son IA. Tu vérifies ce que tu peux lire par un connecteur. S'il n'a pas de CRM, tu écris « aucun, registre `../registre/` » sur la ligne CRM du profil, pour que les séances suivantes le sachent. Quand un outil n'est pas relié à l'IA, tu ne bloques rien : tu notes « non » dans la colonne « Le harnais peut le lire », et tu lui dis qu'il te collera ce que tu dois savoir.
 3. **Ce qu'il permet** : lire sa boîte mail, son agenda, écrire dans son agenda et dans le CRM ou le registre après son go. Ces choix restent dans les limites de `../os/08-autorisations.md`, s'il existe ; sinon, le commercial décide seul, ce qui est toujours le cas chez celui qui vend seul. S'il refuse une chose, tu la notes et tu fais sans.
-4. **Comment il t'apporte ses échanges** : il colle la transcription, il joint un fichier, il te raconte l'échange en quelques phrases, ou il a un dossier où les transcriptions arrivent.
+4. **Comment il t'apporte ses échanges** : il colle la transcription, il joint un fichier, il te raconte l'échange en quelques phrases, ou il a un dossier où les transcriptions arrivent. Tu lui dis aussi qu'après chaque échange tu lui feras un court retour, ce qui a marché et une chose à essayer, et qu'il peut le couper : tu notes sa réponse dans la section « Le retour après chaque échange ». La section « Le souffleur » reste à « pas encore choisi » quand la skill `skills/souffleur/` existe, et tu la poses la première fois qu'il s'en sert ; sans cette skill, tu écris « sans objet ».
 5. **Son point du matin** : l'heure à laquelle il veut le lire. Tu lui montres l'ordre de tri qui s'applique : celui de `../os/07-ordre-du-point-du-matin.md` s'il existe et qu'il est rempli, sinon l'ordre LABK (section 2 de la skill `point-du-matin`), que tu lui résumes en une phrase. S'il veut un autre ordre, c'est une règle personnelle : tu suis la procédure « Le commercial a le dernier mot » de `CLAUDE.md`, tu lui cites une fois les situations qu'elle ferait passer après (par exemple une option qui tombe dans deux jours), puis tu l'inscris dans `personnel/regles-personnelles.md`. Tu ne la ranges jamais dans le profil.
 
 Tu lui demandes aussi si un autre CRM tourne en parallèle, par exemple en copie de ses mails. Deux CRM font deux vérités : tu le notes dans `personnel/journal.md`, et c'est à l'entreprise de trancher. Chez celui qui vend seul, c'est lui qui tranche, et tu notes sa décision.
@@ -135,6 +136,9 @@ Tu lis l'ancien outil, en lecture seule, et tu ranges chaque élément au bon en
 | Les règles décidées par le commercial, ou validées par l'ancienne boucle | `personnel/regles-personnelles.md`, avec leur date et leur origine |
 | Les traces (`raw/traces/`) | `personnel/raw/traces/`, copiées telles quelles |
 | Le wiki (`wiki/`) | `personnel/wiki/`, copié tel quel |
+| Un outil de prospection existant : ses campagnes en cours, leurs listes et leurs registres | Les campagnes en cours finissent dans l'ancien outil, que tu lis sans le reprendre, et tu ne prépares aucune vague pour leurs suspects. Les campagnes suivantes partent dans le harnais (skill `campagne`) |
+| Les réglages de cet outil : plafonds, créneaux, cadence, sources de listes, adresses d'envoi | À reporter dans `../os/13-prospection.md` : tu les prépares dans le compte rendu de reprise, comme les autres règles de l'entreprise |
+| Ses leçons de campagne : bilans, motifs des suspects écartés, angles qui ont fait répondre | Dans le compte rendu de reprise, pour que la skill `liste` et la skill `campagne` s'en servent dès la première campagne du harnais |
 
 Quand un élément ne trouve pas sa place, tu ne le jettes pas : tu le listes.
 
@@ -195,6 +199,29 @@ Ce point ne reprend pas ce que le lot de la première mission vient de couvrir :
 
 Le rythme du portefeuille, au pied de la page, ne se compare qu'avec huit semaines d'historique dans le CRM ou le registre (deux périodes de quatre semaines, section 2 de la skill `coach-crm`). Avant, tu dis en une ligne depuis quand tu observes et à partir de quand le rythme sera comparable, sans inventer de tendance. Le premier jour d'un registre neuf, c'est toujours le cas.
 
+## 5 bis. La prospection, sur son go
+
+Cette séance ne s'applique qu'au commercial qui va chercher de nouveaux clients, le jour où il le veut : à la suite du départ, ou plus tard, quand il écrit « on règle la prospection ». Tant qu'elle n'a pas eu lieu, le harnais suit le portefeuille, mais il ne prépare aucune vague.
+
+Tu remplis `../os/13-prospection.md` avec lui, bloc par bloc, deux questions au plus par message, en proposant chaque fois la valeur de départ écrite entre parenthèses dans le fichier. Dans une équipe, c'est la personne autorisée qui écrit ce fichier : tu prépares ses réponses dans un constat, et tu attends qu'elle l'ait écrit.
+
+1. **Les canaux.** Tu lui demandes par quels canaux il va chercher des clients : le mail, LinkedIn, le téléphone, les événements, son réseau. Pour chacun, tu écris le relais. Pour le mail, tu vérifies que sa messagerie est reliée à son IA par un connecteur qui sait envoyer, et, si c'est le cas, tu écris « oui » dans la ligne Messagerie de `personnel/profil.md`, avec la limite qu'elle porte ; s'il passe par un outil d'envoi, tu en notes le nom et tu lui dis en une phrase que cet outil mesure souvent les ouvertures par défaut, que le harnais ne s'en sert pas, et qu'il peut couper ce réglage.
+2. **Les adresses d'envoi**, avec leur date de mise en service. Une adresse neuve démarre en montée en charge, et tu le lui dis.
+3. **Les créneaux et les absences**, et l'endroit où il note ses absences.
+4. **Le rythme et le go** : le délai entre deux envois, la montée en charge, la cadence par défaut, la forme du go, et les deux valeurs de départ du calcul à rebours. S'il ne connaît pas ses taux, tu proposes un premier jet, marqué comme une hypothèse. Tu lui expliques en deux phrases le go de la semaine : il lit tout le vendredi, il dit un mot, et rien d'autre ne part.
+5. **Les sources de listes** : le fournisseur de données s'il en a un, avec son coût ; sinon, ses propres fichiers et les pages qu'il désignera.
+6. **Le suivi des clics**, seulement s'il a un outil de suivi des liens. Sinon, tu écris « aucun », et le harnais travaille sur les réponses.
+7. **La phrase pour ne plus être contacté**, que tu lui proposes et qu'il corrige.
+
+Ensuite, dans le même lot :
+
+- tu crées le dossier de l'entreprise `../prospection/`, avec `campagnes/`, `vagues/` et `listes/`, après l'avoir dit en une phrase ;
+- avec un CRM, tu relèves par le connecteur les noms techniques que demande le bloc `prospection` de `../os/crm/config.json` (l'objet des campagnes, les champs de séquence, l'objet des signaux, les objets qu'un outil écrit seul), et tu remplis ce bloc sur son go, comme le dit la section 3 bis. Un champ qui manque dans le CRM se propose à la création, un par un, sur son go ; s'il ne veut pas le créer, l'information va dans la fiche de la campagne, et tu le dis ;
+- sans CRM, tu vérifies que les colonnes de prospection sont à la fin de `../registre/contacts.csv`, et tu les ajoutes sur son go si son registre est plus ancien ;
+- tu lui proposes la tâche planifiée qui fait partir la vague validée chaque matin ouvré, si son outil sait en créer une. Sinon, tu lui dis qu'il écrira « envoie la vague du jour » chaque matin ouvré, et tu l'écris dans `../os/13-prospection.md`.
+
+La séance se termine sur sa première liste (skill `liste`) ou sur la conception de sa première campagne (skill `campagne`), selon ce qu'il veut faire d'abord. Rien ne part ce jour-là : la première vague attend la première préparation de semaine.
+
 ## 6. Fin de chaque séance
 
-Tu écris une ligne dans `personnel/journal.md`, au format de la section « La reprise » : la date, la séance, ce qui a été installé ou repris, et où reprendre. À la fin de la dernière séance, tu écris « Installation terminée », et tu écris la version du harnais installée, lue dans `JOURNAL.md`, dans `personnel/profil.md`, section « La version du harnais installée ».
+Tu écris une ligne dans `personnel/journal.md`, au format de la section « La reprise » : la date, la séance, ce qui a été installé ou repris, et où reprendre. À la fin de la séance 4, tu écris « Installation terminée » (la séance 5, si elle a lieu, écrit sa propre ligne au journal), et tu écris la version du harnais installée, lue dans `JOURNAL.md`, dans `personnel/profil.md`, section « La version du harnais installée ».

@@ -24,7 +24,11 @@ Deux fichiers suffisent. Ils s'ouvrent dans n'importe quel tableur (Excel, Numbe
 - `motif_perdu`, `date_reactivation` : remplis quand l'affaire s'arrête, pour savoir quand et comment revenir vers la personne. Une perte ne supprime rien : la ligne reste dans le fichier, à l'étape perdue.
 - `linkedin` : l'adresse du profil LinkedIn public de la personne. Elle vit ici, et non dans le dossier personnel du harnais, parce qu'une donnée sur un contact appartient à l'entreprise, et que le dossier personnel part avec le commercial (décision de Laurent du 25/11/2026).
 
-Les dates s'écrivent `AAAA-MM-JJ`.
+- `campagne`, `etape_sequence`, `date_dernier_envoi` : pour un suspect touché par une campagne, le nom de sa campagne (celui de sa fiche dans `../prospection/campagnes/`), le dernier pas de séquence reçu (0 tant que rien n'est parti) et la date de ce pas. Le harnais s'en sert pour calculer les relances dues.
+- `statut_email` : `bon`, `risque` ou `manquant`. Seule une adresse `bon` entre dans une séquence.
+- `demande_arret` : la date à laquelle la personne a demandé à ne plus être contactée. Une ligne qui la porte ne reçoit plus jamais de message de prospection, quelle que soit la campagne.
+
+Les dates s'écrivent `AAAA-MM-JJ`. Un champ qui contient un point-virgule s'écrit entre guillemets.
 
 ## Les colonnes de `echanges.csv`
 

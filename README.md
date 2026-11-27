@@ -50,6 +50,7 @@ Le harnais a un seul but : que vous parliez à la bonne personne, au bon moment,
 
 <img src="harnais/assets/journee-du-commercial.svg" alt="Une journée avec le harnais : le point du matin, l'échange, la captation, le suivi à jour." width="100%"/>
 
+- **Pour trouver de nouveaux clients**, il calcule avec vous combien d'entreprises il faut contacter pour obtenir vos rendez-vous, construit la liste à partir de votre cible, écrit avec vous la campagne et ses messages, et prépare votre semaine de prospection : par mail, sur LinkedIn, au téléphone ou à la sortie d'un événement.
 - **Le matin**, il vous dit à qui parler aujourd'hui, et pourquoi maintenant. Chaque ligne dit d'où il tient l'information.
 - **Avant un rendez-vous**, il vous prépare une page : ce que vous savez déjà, ce qui manque, et les questions qui le feront dire au client.
 - **Après**, vous lui racontez l'échange en quelques phrases ou vous collez la transcription, et il en tire le compte rendu, les tâches et le brouillon de votre relance.
@@ -70,7 +71,7 @@ Il se comporte comme un vieux commercial bienveillant assis à côté de vous. I
 
 ## C'est vous qui décidez
 
-Il n'envoie aucun message à votre place, et il n'écrit rien dans votre CRM ou votre agenda sans votre accord. La même règle vaut pour le registre, si vous n'avez pas de CRM. Il vous montre d'abord tout ce qu'il propose, et un seul « go » de votre part couvre l'ensemble. Seules ses propres notes de travail, dans son dossier, s'écrivent sans vous demander.
+Rien ne part sans votre go, et il n'écrit rien dans votre CRM ou votre agenda sans votre accord. La même règle vaut pour le registre, si vous n'avez pas de CRM. Il vous montre d'abord tout ce qu'il propose, en entier, et un seul « go » de votre part couvre l'ensemble. En prospection, vous pouvez valider toute votre semaine d'un seul mot : il fait alors partir les messages que vous avez lus, par votre messagerie, aux jours et aux heures prévus, et rien d'autre. Un message que vous n'avez pas lu ne part jamais, et tout autre message (une réponse, une confirmation, une relance personnelle) reste préparé par lui et envoyé par vous. Il ne dépense jamais un crédit d'un fournisseur de données sans votre accord, et il ne lit jamais LinkedIn : c'est vous qui envoyez vos messages LinkedIn. Seules ses propres notes de travail, dans son dossier, s'écrivent sans vous demander.
 
 Vos fichiers restent chez vous : vos réglages, votre façon de vendre et ce qu'il apprend vivent dans le dossier du kit, sur votre ordinateur, et votre suivi reste dans votre CRM ou dans le registre, rangé dans ce même dossier. Ce que Claude lit dans ces fichiers et ce que vous lui écrivez passe par Anthropic, qui fait tourner Claude, et reste dans l'historique de votre compte Claude tant que vous ne le supprimez pas, aux conditions de votre abonnement. Rien n'est envoyé à LABK. Le détail est dans le fichier `CONFIDENTIALITE.md`, dans le dossier `harnais`.
 

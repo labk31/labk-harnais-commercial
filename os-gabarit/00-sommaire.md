@@ -42,6 +42,7 @@ Chez celui qui vend seul, l'OS est le dossier `os/`, posé à côté du dossier 
 | `10-constats-du-terrain.md` | Ce que les harnais font remonter du terrain | Non (vide au départ) | équipe |
 | `11-crm.md` et `crm/config.json` | L'outil CRM ou le registre qui le remplace, les champs obligatoires, les règles d'usage, et les noms techniques des objets, étapes et champs | Oui (sans CRM, le registre décrit dans `11-crm.md` suffit) | socle |
 | `12-routines.md` | Les routines retenues, quand le CRM ne les porte pas | Non | équipe |
+| `13-prospection.md` | Les canaux et leurs relais, les adresses d'envoi, les créneaux, le rythme, le go, les sources de listes, le suivi des clics | Non pour démarrer, oui pour lancer une campagne | socle |
 | `collecte/liste-minimale.md` | Les trente-quatre demandes qui remplissent l'OS | Oui (c'est une liste à suivre, rien à y écrire) | socle |
 
 ## Quand un fichier d'équipe manque
@@ -97,4 +98,4 @@ L'OS se remplit à partir des trente-quatre demandes de `collecte/liste-minimale
 
 ## Version
 
-Gabarit de l'OS, version 0.5 du 23/11/2026.
+Gabarit de l'OS, version 0.7 du 27/11/2026, en version de travail.

@@ -17,7 +17,7 @@ Ce fichier appartient au commercial. Le harnais le remplit avec lui pendant l'in
 | Outil | Nom | Le harnais peut le lire | Le harnais peut y écrire, après son go |
 |---|---|---|---|
 | CRM | <nom, ou « aucun, registre ../registre/ »> | <oui ou non> | <oui ou non> |
-| Messagerie | <nom> | <oui ou non> | non, le harnais prépare et le commercial envoie |
+| Messagerie | <nom> | <oui ou non> | <oui ou non> : le harnais n'envoie que les vagues de prospection validées par le go de la semaine ; tout autre message, c'est le commercial qui l'envoie |
 | Agenda | <nom> | <oui ou non> | <oui ou non> |
 | Visio et transcription | <nom> | <oui ou non> | non |
 | IA utilisée | <nom et modèle> | sans objet | sans objet |
@@ -27,6 +27,14 @@ Ces choix restent dans les limites de `../os/08-autorisations.md`, s'il existe ;
 ## Comment il apporte ses échanges
 
 <il colle la transcription, il joint un fichier, ou il a un dossier où elles arrivent (lequel)>
+
+## Le retour après chaque échange
+
+<oui, par défaut, ou non : après chaque captation, le harnais lui dit ce qui a marché et une chose à essayer>
+
+## Le souffleur
+
+<édition entreprise seulement : la question rapide, l'écoute en direct (avec quel outil), la pochette seule, ou « pas encore choisi ». Sans la skill `skills/souffleur/`, « sans objet »>
 
 ## Son point du matin
 

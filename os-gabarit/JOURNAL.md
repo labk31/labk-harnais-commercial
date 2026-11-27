@@ -2,6 +2,10 @@
 
 Chaque version du gabarit de l'OS porte un numéro et une ligne qui dit ce qui change. Un changement de gabarit ne touche jamais un OS déjà rempli chez un client : s'il le faut, la ligne dit ce que le client peut reporter dans le sien, à la main.
 
+## v0.7 (en cours, 27/11/2026)
+
+Nouveau fichier du socle, `13-prospection.md` : les canaux et leurs relais, l'envoi planifié, les adresses d'envoi, les créneaux et les absences, le rythme, la forme du go, les sources de listes, le suivi des clics, les valeurs de départ du calcul à rebours, la phrase pour ne plus être contacté, et l'endroit où vivent les campagnes. Il n'est pas requis pour démarrer, il l'est pour lancer une campagne. `crm/config.json` gagne un bloc `prospection` (noms techniques de la prospection dans le CRM, objets écrits par une machine, réglages du verdict des clics). `11-crm.md` gagne la section « La prospection dans le CRM ». `00-sommaire.md` gagne la ligne du nouveau fichier. Un OS déjà rempli peut ajouter ce fichier et ce bloc à la main, ou les remplir à la séance de la prospection de l'installation.
+
 ## v0.6 (en cours, 25/11/2026)
 
 `08-autorisations.md` gagne trois lignes dans « Ce que le harnais ne fait jamais » : il ne fusionne aucune fiche, il ne recopie ni l'OS ni le CRM dans la partie personnelle du harnais, il n'exporte aucune liste de contacts. Un OS déjà rempli peut reporter ces trois lignes à la main.

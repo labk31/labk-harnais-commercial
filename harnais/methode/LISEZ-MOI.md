@@ -16,5 +16,10 @@ Les exemples de ces fichiers sont des phrases types. Dès les premiers rendez-vo
 | `evenement-critique.md` | Vérifier qu'une date oblige le client à décider, et ce qu'on fait s'il n'y en a pas | Le coach CRM, le coaching |
 | `objections-acrac.md` | Traiter une objection en cinq temps | Le coaching |
 | `reviews.md` | Relire un rendez-vous de découverte ou de présentation du devis pour coacher le commercial | Le coaching, si `../os/08-autorisations.md` le permet, ou, sans ce fichier et hors mission LABK, quand le commercial la demande (skill `coaching`, section 4) |
+| `prospection.md` | Le calcul à rebours, ce qui est posé avant d'écrire, la séquence, l'écriture d'un message, les canaux, le bilan | Les skills `liste` et `campagne` |
+| `sources-et-listes.md` | Le contrôle d'une source, le score d'adéquation, le dédoublonnage, quand une liste est prête, le stock | La skill `liste` |
+| `lire-un-signal.md` | Le classement des réponses, le verdict d'un clic, ce qu'un vrai clic déclenche | La skill `campagne`, le coach CRM, le point du matin |
 
 Version 0.1 du 22/11/2026, reprise de la méthode LABK (procédure de placement du 14/10/2026, méthode PI validée le 19/10/2026, méthode CE en brouillon du 19/10/2026, capacité de traitement des objections et skill ACRAC, grilles de review validées les 23/09 et 05/10/2026).
+
+Version 0.2 du 27/11/2026 : ajout des trois fichiers de la prospection (`prospection.md`, `sources-et-listes.md`, `lire-un-signal.md`), repris de la méthode campagne et du règlement de prospection de LABK, sur la décision de Laurent du 27/11/2026.
