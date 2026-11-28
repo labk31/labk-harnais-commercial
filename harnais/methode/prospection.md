@@ -25,6 +25,24 @@ Avant de construire une liste, le harnais dit au commercial combien de suspects 
 
 Le harnais dit le résultat en une phrase, par exemple : « Pour 6 rendez-vous d'ici le 31/01, au taux observé sur vos deux dernières campagnes, il faut toucher environ 300 entreprises, soit 15 par jour ouvré. » Si le chiffre dépasse ce que le commercial peut traiter, il le dit avant de construire quoi que ce soit, parce que c'est souvent là qu'un objectif se révèle irréaliste. Sans objectif, il ne compare à aucune cible : il mesure le rythme observé et le dit.
 
+## En cours de période : l'écart à l'objectif
+
+Le calcul à rebours ne se fait pas qu'une fois. Une fois par semaine, le lundi, le harnais le refait avec ce qui s'est vraiment passé, pour dire au commercial assez tôt qu'un objectif ne sera pas tenu (règle demandée par Laurent le 28/11/2026). Il ne le fait que si `../os/09-objectifs.md` fixe un objectif de rendez-vous ou d'affaires sur une période, ou si le commercial en a donné un.
+
+1. **Ce qui est fait** depuis le début de la période : les rendez-vous ou les affaires obtenus, et les suspects touchés.
+2. **Les taux réels** de la période : rendez-vous par suspect touché. Tant que la période compte moins de `seuils.suspects_minimum_pour_taux_reel` suspects touchés (50 par défaut), le harnais garde les taux du dernier bilan, ou les valeurs de départ, et les marque comme des hypothèses.
+3. **La projection** : ce que la période donnera à la fin, si le rythme de la période et ces taux se maintiennent jusqu'au dernier jour ouvré.
+4. **L'alerte** : quand la projection tombe sous `seuils.ecart_objectif_alerte` de l'objectif (80 pour cent par défaut), le harnais le dit en une phrase, avec ses trois chiffres : l'objectif, la projection, et le nombre de suspects par jour ouvré qu'il faudrait d'ici la fin. Exemple : « Au rythme actuel, vous aurez 3 rendez-vous sur 8 d'ici le 30/11. Pour tenir 8, il faudrait toucher 110 entreprises par jour ouvré, et votre adresse en porte 50. »
+
+Avec l'alerte, il dit d'abord d'où vient l'écart, parce que la réponse n'est pas la même.
+
+- **Le rythme est trop bas, mais l'adresse peut porter plus.** Le nombre par jour qu'il faudrait reste sous ce que permet la montée en charge de l'adresse, et sous le temps que le commercial peut donner aux réponses. Le harnais propose de monter à ce nombre dès la prochaine semaine préparée, palier par palier, et c'est le seul levier qu'il propose.
+- **Le volume ne suffit plus.** Le nombre par jour qu'il faudrait dépasse ce que l'adresse peut porter, ou le temps du commercial. Le harnais le dit, et propose les trois leviers honnêtes, chacun chiffré au rythme possible : **allonger la période** (jusqu'à quelle date), **réduire l'objectif** (à combien), ou **changer de source, de cible ou de message** pour faire monter les taux (ce que le dernier bilan dit qui marche).
+
+Il ne propose jamais d'augmenter un plafond d'envoi, de sauter un palier de la montée en charge ni de toucher des suspects hors cible pour tenir un chiffre. Tant que la période compte moins de `seuils.suspects_minimum_pour_taux_reel` suspects touchés, les taux sont des hypothèses : l'alerte ne parle alors que du rythme, et le dit.
+
+Le commercial choisit. Un objectif fixé par l'employeur ne change qu'avec son accord : le harnais prépare la demande d'accord, chiffrée, que le commercial transmet. Chez celui qui vend seul, il décide lui-même, et le harnais l'écrit dans son OS sur son go. Un objectif de chiffre d'affaires se ramène à un nombre d'affaires par le montant moyen des affaires gagnées ; sans affaire gagnée pour le calculer, le harnais ne projette rien et le dit.
+
 ## Le verrou : ce qui est posé avant d'écrire
 
 Aucun message n'est écrit avant que le message noyau et l'offre soient posés. Sans preuve, la campagne peut démarrer, mais le message ne promet rien. C'est la règle qui a le plus servi : elle empêche d'écrire des messages brillants sur une offre qui n'existe pas encore.

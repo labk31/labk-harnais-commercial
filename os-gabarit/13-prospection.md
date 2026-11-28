@@ -39,7 +39,7 @@ Chaque campagne écrit dans sa fiche l'adresse qui l'envoie. Le plafond compte t
 ## Le rythme
 
 - Délai entre deux envois sur la même adresse : <secondes> (tiré au hasard entre 120 et 240 secondes, jamais fixe)
-- Montée en charge d'une adresse neuve (jamais servie à la prospection), ou à l'arrêt depuis deux semaines ou plus : <règle> (10 messages par jour au départ, puis un de plus par palier de deux jours ouvrés, tant qu'aucun rebond dur nouveau n'apparaît sur la vague précédente)
+- Montée en charge d'une adresse neuve (jamais servie à la prospection), ou à l'arrêt depuis deux semaines ou plus : <règle> (10 messages par jour au départ, relances comprises, puis un de plus par palier de deux jours ouvrés, tant qu'aucun rebond dur nouveau n'apparaît sur la vague précédente)
 - Quota de croisière : <nombre par jour> (fixé par le commercial ; le calcul à rebours le propose)
 - Cadence par défaut d'une séquence : <nombre de pas et délai> (quatre pas, six jours ouvrés entre deux pas). Chaque campagne peut fixer la sienne dans sa fiche.
 

@@ -185,6 +185,8 @@
     "jours_avant_cloture_consigne": 10,
     "passages_avant_dossier_bloque": 3,
     "taux_acceptation_minimum": 0.6,
+    "ecart_objectif_alerte": 0.8,
+    "suspects_minimum_pour_taux_reel": 50,
     "lettres_a_verifier_avant_avancement": [
       "evenement_critique",
       "decision"

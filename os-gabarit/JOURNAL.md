@@ -4,6 +4,10 @@ Chaque version du gabarit de l'OS porte un numéro et une ligne qui dit ce qui c
 
 ## v0.7 (en cours, 27/11/2026)
 
+Ajout du 28/11/2026 : deux seuils dans `crm/config.json`, `ecart_objectif_alerte` (0.8) et `suspects_minimum_pour_taux_reel` (50), pour l'alerte du lundi sur l'écart à l'objectif. Un OS déjà rempli sans eux prend ces valeurs par défaut.
+
+Précision du 28/11/2026 (décision de Laurent après la simulation 7) : dans `13-prospection.md`, la montée en charge compte tous les messages du jour, relances comprises. Pour un OS déjà rempli : ajouter « relances comprises » à la règle de montée en charge.
+
 Nouveau fichier du socle, `13-prospection.md` : les canaux et leurs relais, l'envoi planifié, les adresses d'envoi, les créneaux et les absences, le rythme, la forme du go, les sources de listes, le suivi des clics, les valeurs de départ du calcul à rebours, la phrase pour ne plus être contacté, et l'endroit où vivent les campagnes. Il n'est pas requis pour démarrer, il l'est pour lancer une campagne. `crm/config.json` gagne un bloc `prospection` (noms techniques de la prospection dans le CRM, objets écrits par une machine, réglages du verdict des clics). `11-crm.md` gagne la section « La prospection dans le CRM ». `00-sommaire.md` gagne la ligne du nouveau fichier. Un OS déjà rempli peut ajouter ce fichier et ce bloc à la main, ou les remplir à la séance de la prospection de l'installation.
 
 ## v0.6 (en cours, 25/11/2026)

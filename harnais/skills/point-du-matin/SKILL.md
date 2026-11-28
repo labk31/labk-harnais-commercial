@@ -36,18 +36,19 @@ Chaque ligne dit en une phrase : qui, pourquoi aujourd'hui, la preuve (la fiche 
 
 Le bloc « à regarder aujourd'hui » se remplit en trois temps, toujours dans cet ordre :
 
-1. **Ce qui ne peut pas attendre.** Une date qui tombe dans les deux jours ouvrés (un vote, une option, une échéance, un rendez-vous à préparer) entre toujours dans le bloc, quelle que soit la règle de tri. Elle prend la place que lui donne cette règle.
+1. **Ce qui ne peut pas attendre.** Une date du client qui tombe dans les deux jours ouvrés (un vote, une option, une échéance, un événement critique, un rendez-vous à préparer) entre toujours dans le bloc, quelle que soit la règle de tri. Elle prend la place que lui donne cette règle. Une relance ou une prochaine action que le commercial a datée lui-même n'en fait pas partie : elle suit l'ordre de tri comme le reste. Les relances en retard ne prennent qu'une ligne à elles toutes, avec leur nombre et les trois plus anciennes ; le commercial demande la liste s'il la veut.
 2. **Le reste, dans l'ordre de tri**, jusqu'au plafond : `seuils.dossiers_par_matin` dossiers du portefeuille (cinq par défaut), et jamais plus de dix lignes en tout. Un dossier peut prendre deux lignes, par exemple une réponse et la relance qui en découle.
 3. **Ce qui ne tient pas.** Si les dates du premier temps dépassent à elles seules le plafond, elles restent toutes, et tu le dis en une ligne en tête du bloc. Les autres dossiers qui ne tiennent pas ne disparaissent pas : tu les nommes sur une seule ligne, sous le bloc, « reportés à demain », avec la raison en trois mots pour chacun. Le lendemain, ils passent devant les dossiers de même rang.
 
 Ce plafond est le seul : la skill `coach-crm` y renvoie.
 
-**Le bloc de la prospection.** Quand une campagne est en cours (skill `campagne`), la page porte, après le bloc « à regarder aujourd'hui », un bloc court sur la prospection, en quatre lignes au plus :
+**Le bloc de la prospection.** Quand une campagne est en cours (skill `campagne`), la page porte, après le bloc « à regarder aujourd'hui », un bloc court sur la prospection, en cinq lignes au plus :
 
 1. ce qui part aujourd'hui : la vague du jour (le nombre de messages, la campagne, l'objet), ou « rien ne part aujourd'hui » et pourquoi ;
 2. ce qui est revenu depuis la veille : les réponses avec la personne, l'entreprise et ce qu'elles disent, les vrais clics, les rebonds, les arrêts, ou « rien » ;
 3. les gestes manuels du jour : les profils LinkedIn à ouvrir, les appels à passer, avec chaque message prêt à coller ou chaque raison d'appeler ;
-4. le stock, quand il passe sous le seuil d'alerte (skill `liste`, section 9).
+4. le stock, quand il passe sous le seuil d'alerte (skill `liste`, section 9) ;
+5. le lundi, l'écart à l'objectif, quand la projection de la période tombe sous le seuil d'alerte, avec ses trois chiffres et les trois leviers chiffrés, comme le dit `methode/prospection.md`, section « En cours de période : l'écart à l'objectif ». Sans alerte, rien n'est dit. Cette ligne passe en tête du bloc.
 
 Une réponse sur le fond d'un suspect ne reste pas dans ce bloc : elle passe en tête de la page, avec le lot du coach CRM qui ouvre l'affaire. Le bloc de la prospection ne compte pas dans le plafond des dossiers, et il ne répète jamais ce qu'il a déjà dit la veille.
 
